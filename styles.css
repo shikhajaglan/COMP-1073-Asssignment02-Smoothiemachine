@@ -1,0 +1,98 @@
+/*  Shikha Shikha
+  Date: 2025-07-16
+  styles.css
+  Description: Styling the Smoothie Machine order app 
+*/
+
+/* First of all, styling the page base by adding font-family and color*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin: 0;
+  color: #333;
+}
+
+/* Heading the page */
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Smoothie order form box */
+form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form the elements spacing */
+form label, form select, form input[type="checkbox"] {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+/* styling the submit button of smoothie  */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Output box for smoothie options */
+#output {
+  background-color: #e6ffe6;
+  border-left: 5px solid #4CAF50;
+  padding: 15px;
+  margin-top: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+/* Smoothie ingredient images */
+#smoothieImage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#smoothieImage img {
+  width: 120px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+#smoothieImage img:hover {
+  transform: scale(1.05);
+}
