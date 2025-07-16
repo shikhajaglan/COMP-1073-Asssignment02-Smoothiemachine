@@ -1,0 +1,56 @@
+ <!--Shikha Shikha-->
+ <!--Date = 2025-07-16-->
+ <!--Assignment02 - Smoothie Machine-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smoothie Machine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Order a Custom Smoothie!</h1>
+
+<!--Added a format of smoothie order form -->
+  <!-- Smoothie Order Form -->
+  <form id="smoothieForm">
+    <label for="size">Choose Size:</label>
+    <select id="size" required>
+      <option value="">--Select--</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+ <!-- added a list of ingredients like which flavour smoothie you want-->
+    <fieldset>
+      <legend>Choose Ingredients (Max 4):</legend>
+      <label><input type="checkbox" value="Banana"> Banana</label>
+      <label><input type="checkbox" value="Strawberry"> Strawberry</label>
+      <label><input type="checkbox" value="Blueberry"> Blueberry</label>
+      <label><input type="checkbox" value="Mango"> Mango</label>
+      <label><input type="checkbox" value="Spinach"> Spinach</label>
+    </fieldset>
+ <!-- Added a base for the smoothie who want it with water, milk, yogurt-->
+    <label for="base">Choose a Base:</label>
+    <select id="base" required>
+      <option value="">--Select--</option>
+      <option value="Almond Milk">Almond Milk</option>
+      <option value="Coconut Water">Coconut Water</option>
+      <option value="Yogurt">Yogurt</option>
+    </select>
+ <!-- added a option who want to add a protein-->
+    <label>
+      <input type="checkbox" id="protein"> Add Protein?
+    </label>
+
+ <!--add a button that helps to submit the order-->
+    <button type="submit">Order Smoothie</button>
+  </form>
+
+  <!-- Smoothie order -->
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
